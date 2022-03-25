@@ -55,17 +55,6 @@ main section#exams .cards .card .box .content {
     backdrop-filter: brightness(30%);
 }
 
-main section#exams .cards .card .box .content h2 {
-    position: absolute;
-    top: 1rem;
-    left: 2rem;
-    font-size: 6rem;
-    font-style:italic;
-    color: var(--light);
-    transition: .5s;
-    text-shadow: 2px 4px 8px rgba(0,0,0,0.5);
-}
-
 main section#exams .cards .card .box .content h3 {
     color: var(--light);
     font-size:3rem;
