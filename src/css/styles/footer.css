@@ -1,0 +1,85 @@
+footer {
+    width: 100%;
+    padding: 4rem 0rem;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+footer .label {
+    font-size: 2rem;
+    color: var(--light);
+    text-shadow:2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+
+footer .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+footer .about .text p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: var(--text-light);
+}
+
+footer ul.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+
+footer ul.nav li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-light);
+    transition: .2s;
+}
+
+footer ul.nav li a:hover {
+    color: var(--secondary);
+}
+
+footer .socials .icons  {
+    display: flex;
+    justify-content:flex-start;
+    gap: 2.5rem;
+}
+
+footer .socials .icons a {
+    transition: .3s;
+}
+
+footer .socials .icons a:hover {
+    transform: translateY(-8px)
+}
+
+footer .socials ion-icon {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1.4rem;
+    border-radius: 8px;
+    color:var(--light);
+    background: var(--secondary);
+    margin-top: 2rem;
+}
+
+footer .warning p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--secondary);
+    margin-top: 3rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 870px) {
+    footer .grid-4 {
+        grid-template-columns: 1fr;
+    }
+
+}

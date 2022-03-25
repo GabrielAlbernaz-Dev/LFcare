@@ -1,0 +1,66 @@
+@keyframes fadeUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-4000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translate(4000px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes arrowDown {
+    0% {
+        transform: translate3d(-50%,0,0);
+    }
+
+    25% {
+        transform: translate3d(-50%,-5px,0);
+    }
+
+    50% {
+        transform: translate3d(-50%,5px,0);
+    }
+
+    100% {
+        transform: translate3d(-50%,0px,0);
+    }
+}
+

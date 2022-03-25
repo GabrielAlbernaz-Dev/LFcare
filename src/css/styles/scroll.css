@@ -1,0 +1,11 @@
+[data-scroll] {
+    opacity: 0;
+}
+
+.fadeInRight {
+    animation: fadeInRight 1s linear forwards;
+}
+
+.fadeInLeft {
+    animation: fadeInLeft .4s linear forwards;
+}

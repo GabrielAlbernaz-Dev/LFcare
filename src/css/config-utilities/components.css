@@ -1,0 +1,82 @@
+.icon-button  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.2rem;
+    border-radius: 100%;
+    background-color: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.0) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-size: 2rem;
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.2rem 2.2rem;
+    background-color: var(--secondary);
+    color: var(--light);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+
+.button-outline {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.2rem 2.2rem;
+    background-color: transparent;
+    color: var(--secondary);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 2px solid var(--secondary);
+}
+
+.button:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0,0.0);
+    background: var(--secondary-hover);
+}
+
+.button-outline:hover {
+    background: var(--light);
+    color: var(--secondary);
+    border: 2px solid var(--light);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0,0.0);
+}
+
+.brand h2 {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.brand h2 .icon-button {
+    color: var(--light);
+    font-weight: 600;
+}
+
+ .brand h2 span .lf {
+    color: var(--secondary);
+}
+
+ .brand h2 span.text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0,0.3);
+}
+
+
+@media (max-width:440px) {
+    .button,
+    .button-outline {
+        font-size: 1.8rem;
+        padding: 1.2rem 1.4rem;
+    }
+}
+
+@media (max-width:320px) {
+     .button {
+        padding: 1.2rem 1rem;
+    }
+}
+

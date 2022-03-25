@@ -1,0 +1,280 @@
+header.banner {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background:var(--primary);
+    background-image: url(../../img/bg-banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
+    background-position:top;
+}
+
+header.banner nav.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2.4rem 0rem;
+}
+
+header.banner nav.navbar.active {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+header.banner nav.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header.banner nav.navbar .container ul.nav {
+    display: flex;
+    gap: 2.2rem;
+    list-style: none;
+}
+
+header.banner nav.navbar .container ul.nav li a {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    color: var(--light);
+    position: relative;
+}
+
+header.banner nav.navbar .container ul.nav li a:hover {
+    color: var(--secondary);
+    transition: .2s;
+}
+
+header.banner nav.navbar .container ul.nav li a:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+header.banner nav.navbar .container ul.nav li a:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+header.banner nav.navbar .container .contact {
+    transition: .3s;
+}
+
+header.banner nav.navbar .container .bars {
+    display: none;
+    z-index: 102;
+    flex-direction: column;
+    gap: .5rem;
+}
+header.banner nav.navbar .container .bars.close-icon {
+    position:absolute;
+    top: 5rem;
+    right: 2rem;
+    margin:0;
+}
+
+header.banner nav.navbar .container .bars span {
+    display: block;
+    width: 3rem;
+    height: .4rem;
+    font-size: 2rem;
+    background-color: var(--light);
+    transition: all .3s ease-in;
+    margin: .5rem 0;
+}
+
+header.banner nav.navbar .container .bars.close-icon span:nth-child(1) {
+    transform: translateY(-4px) rotate(45deg);
+}
+
+header.banner nav.navbar .container .bars.close-icon span:nth-child(2) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+
+header.banner nav.navbar .container .bars.close-icon span:nth-child(3) {
+    opacity: 0;
+}
+
+/***** BANNER CONTENT *****/
+header.banner .banner-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header.banner .banner-content .text-content {
+    margin-top: 6rem;
+}
+
+header.banner .banner-content .text-content h3 {
+    font-size: 2rem;
+    letter-spacing:1px;
+    font-weight: 700;
+    font-family: "Dosis",sans-serif;
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-shadow: 1px 2px 4px rgba(0,0,0,0.4);
+}
+
+header.banner .banner-content .text-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--light);
+    line-height: 5rem;
+}
+
+header.banner .banner-content .text-content h1 span {
+    color: var(--secondary);
+}
+
+header.banner .banner-content .text-content p {
+    font-size: 1.8rem;
+    color: var(--text-light);
+}
+
+header.banner .arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 25%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+    color: var(--light);
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition:.3s;
+    animation: arrowDown .8s linear infinite;
+}
+
+/***** RESPONSIVE *****/
+@media (max-width: 1350px) {
+    header.banner {
+        min-height: 100vh;
+    }
+
+    header.banner .banner-content {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    header.banner .arrow-down {
+        bottom: 6%;
+    }
+}
+
+
+@media (max-width: 870px) {
+
+    header.banner nav.navbar .container ul.nav {
+        position: fixed;
+        top: 0;
+        left:0;
+        width: 0;
+        height:100%;
+        overflow: hidden;
+        background: var(--primary);
+        flex-direction: column;
+        gap:3rem;
+        align-items: center;
+        justify-content:center;
+        opacity: 0;
+        transform: scale(0);
+        transition: all .3s ease;
+    }
+
+    header.banner nav.navbar.open .container ul.nav {
+        width: 100%;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    header.banner nav.navbar .container ul.nav li a {
+        font-size: 2.6rem;
+    }
+
+    header.banner nav.navbar .container .bars {
+        display: block;
+    }
+
+    header.banner nav.navbar.open .container .brand {
+        position: fixed;
+        top: 3.5%;
+        left: 5%;
+        z-index: 100;
+    }
+
+    header.banner nav.navbar.open .container .contact {
+        position: fixed;
+        left: 50%;
+        transform:translateX(-50%);
+        bottom: 10%;
+    }
+
+    header.banner nav.navbar.open .container .contact .button {
+        font-size:2.3rem;
+        font-weight: 700;
+        padding: 1.8rem 2.8rem;
+    }
+
+}
+
+@media (max-width:440px) {
+    html {
+        font-size: 55%;
+    }
+
+    header.banner {
+        min-height: 80vh;
+    }
+
+    header.banner .banner-content .text-content h1 {
+        font-size: 4rem;
+    }
+
+    header.banner .banner-content .text-content h3 {
+        font-size: 2rem;
+    }
+
+    header.banner .banner-content .text-content p {
+        font-size: 1.6rem;
+    }
+
+    header.banner .banner-content .text-content .buttons .button-outline.mx-4 {
+        margin: 0rem 2rem;
+    }
+
+    header.banner .arrow-down {
+        bottom: 20%;
+    }
+}
+
+@media (max-width:320px) {
+    header.banner nav.navbar .container .brand h2 span.text {
+        font-size: 2rem;
+    }
+
+    header.banner .banner-content .text-content .buttons {
+        display: flex;
+        gap: .9rem;
+    }
+
+    header.banner .banner-content .text-content .buttons .button-outline.mx-4 {
+        margin: 0;
+    }
+}

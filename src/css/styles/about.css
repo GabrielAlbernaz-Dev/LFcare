@@ -1,0 +1,33 @@
+main section#about .img-content img {
+    max-width: 100%;
+    height:auto;
+    border-radius:12px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    object-fit: cover;
+}
+
+main section#about .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main section#about .text-content ul {
+   padding:1rem 3rem;
+}
+
+main section#about .text-content ul li {
+    margin: 1.5rem 0;
+    font-size: 1.8rem;
+    color: var(--dark);
+}
+
+main section#about .text-content ul li::marker {
+    color: var(--secondary);
+    min-width: 30px;
+}
+
+
+
+  
