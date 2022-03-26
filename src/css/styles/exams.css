@@ -9,6 +9,7 @@ main section#exams h2.title {
 
 main section#exams .cards {
     display: flex;
+    justify-content:center;
     flex-wrap: wrap;
     gap:2rem;
     padding: 2rem 0rem;
