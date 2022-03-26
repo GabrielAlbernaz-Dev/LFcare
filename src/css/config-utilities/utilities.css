@@ -87,3 +87,7 @@
 .exam6 {
     background-image: url(../../img/exames/teste-ergometrico.jpg)
 }
+
+.hide {
+    display: none;
+}
