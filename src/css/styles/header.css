@@ -234,13 +234,13 @@ header.banner .arrow-down {
 
 }
 
-@media (max-width:460px) {
+@media (max-width:540px) {
     html {
         font-size: 55%;
     }
 
     header.banner {
-        min-height: 90vh;
+        min-height: 100vh;
     }
 
     header.banner .banner-content .text-content h1 {
@@ -260,7 +260,7 @@ header.banner .arrow-down {
     }
 
     header.banner .arrow-down {
-        bottom: 8%;
+        bottom: 3rem;
     }
 }
 
