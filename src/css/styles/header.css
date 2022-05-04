@@ -260,7 +260,7 @@ header.banner .arrow-down {
     }
 
     header.banner .arrow-down {
-        bottom: 3rem;
+        bottom: 0;
     }
 }
 
